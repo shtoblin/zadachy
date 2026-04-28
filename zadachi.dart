@@ -146,7 +146,6 @@ class Table {
   void remove(Tableware p) => _items.remove(p);
 }
 
-// ========== ПРОВЕРКА ==========
 void main() {
   print('1');
   final k = Mug(0.5);
