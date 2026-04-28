@@ -148,56 +148,56 @@ class Table {
 
 // ========== ПРОВЕРКА ==========
 void main() {
-  print('--- 1 ---');
+  print('1');
   final k = Mug(0.5);
   Person().drinkFrom(k, 0.2);
   print('Осталось: ${k.amount}');
 
-  print('--- 2 ---');
+  print('2');
   final polka = StorageSystem('Верхняя полка');
   final shkaf = Wardrobe();
   shkaf.systems.add(polka);
   shkaf.put(polka, 'Свитер');
   print('Забрали: ${shkaf.take(polka, 'Свитер')}');
 
-  print('--- 3 ---');
+  print('3');
   final grif = Barbell(100);
   grif.add(Plate(20), toLeft: true);
   print('Слева блинов: ${grif.left.length}');
 
-  print('--- 4 ---');
+  print('4');
   final kv = CurrencyConverter({'USD': 90.0, 'EUR': 100.0});
   print('100 USD = ${kv.convert(100, 'USD', 'EUR')} EUR');
 
-  print('--- 5 ---');
+  print('5');
   final g = Garage<String>();
   g.park('Lada');
   print('Забрали: ${g.retrieve('Lada')}');
 
-  print('--- 6 ---');
+  print('6');
   print('10 + 5 = ${Number(10) + Number(5)}');
 
-  print('--- 7 ---');
+  print('7');
   final a = Car();
   a.drive();
   print('Состояние: ${a.state}');
   a.turn();
   print('Состояние: ${a.state}');
 
-  print('--- 8 ---');
+  print('8');
   print('Площадь: ${Rectangle(4, 5).area}');
 
-  print('--- 9 ---');
+  print('9');
   final perevod = NumberConverter();
   print('255 -> hex: ${perevod.convert('255', 10, 16)}');
 
-  print('--- 10 ---');
+  print('10');
   final kf = ShapeCollection();
   kf.add(Rectangle(2, 3));
   kf.add(Circle(5));
   print('Макс. площадь: ${kf.maxAreaShape()?.area}');
 
-  print('--- 11 ---');
+  print('11');
   final stol = Table();
   stol.put(Fork());
   stol.put(Spoon());
